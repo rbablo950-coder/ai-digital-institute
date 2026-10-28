@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Digital Institute - Online computer courses, school education and competitive exam preparation.">
+  <title>AI Digital Institute | Learn. Grow. Succeed.</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f8ff;
+      color: #17233c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 12px #0000000c;
+    }
+
+    .logo { font-size: 23px; font-weight: bold; color: #155eef; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { text-decoration: none; color: #24324a; font-weight: 600; }
+
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(120deg, #102b66, #1769e0);
+      color: white;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.15; }
+    .hero p { margin: 22px 0; font-size: 18px; color: #e1eaff; }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border: 0;
+      border-radius: 8px;
+      background: #ffbd45;
+      color: #18233c;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .hero-card {
+      background: white;
+      color: #17233c;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 15px 40px #00123c30;
+    }
+
+    section { padding: 65px 7%; }
+    .section-title { text-align: center; margin-bottom: 32px; }
+    .section-title h2 { font-size: 32px; color: #123b83; }
+    .section-title p { color: #68758a; margin-top: 8px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid #e6ebf5;
+      box-shadow: 0 5px 18px #102b660b;
+    }
+
+    .card h3 { color: #155eef; margin-bottom: 8px; }
+    .card p { color: #66738a; margin-bottom: 12px; }
+    .card a { color: #155eef; font-weight: bold; text-decoration: none; }
+
+    .features {
+      background: #eaf1ff;
+      text-align: center;
+    }
+
+    .feature { padding: 20px; }
+    .feature span { font-size: 32px; }
+
+    .contact {
+      background: #102b66;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 { font-size: 32px; margin-bottom: 12px; }
+    .contact p { margin: 10px; }
+    .contact a { color: #ffcf70; }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      background: #091b40;
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; padding: 55px 6%; }
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      header { justify-content: center; }
+      nav { justify-content: center; }
+    }
+
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: 1fr; }
+      section { padding: 45px 5%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">AI DIGITAL INSTITUTE</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#features">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <h1>Learn Today.<br>Lead Tomorrow.</h1>
+        <p>
+          Learn computer skills, school subjects and competitive exam
+          preparation with AI Digital Institute.
+        </p>
+        <a href="#courses" class="button">Explore Courses</a>
+      </div>
+
+      <div class="hero-card">
+        <h2>Welcome to AI Digital Institute</h2>
+        <p>Build your skills. Prepare for your future.</p>
+        <hr style="margin:18px 0; border:0; border-top:1px solid #e6ebf5;">
+        <p>✓ Computer Education</p>
+        <p>✓ School Classes 6–12</p>
+        <p>✓ NEET and JEE Preparation</p>
+        <p>✓ Competitive Exam Preparation</p>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="section-title">
+        <h2>Explore Our Courses</h2>
+        <p>Choose a learning path that matches your goals.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Computer Fundamentals</h3>
+          <p>Learn computer basics, files, internet and email.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>Advanced Excel</h3>
+          <p>Learn formulas, functions, data analysis and reporting.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>Data Analytics</h3>
+          <p>Start learning Excel, SQL, Python and Power BI.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>Programming</h3>
+          <p>Explore HTML, CSS, JavaScript and Python.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>School Education</h3>
+          <p>Learning support for students in Classes 6 to 12.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>NEET and JEE</h3>
+          <p>Prepare for medical and engineering entrance exams.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>Government Exams</h3>
+          <p>Preparation resources for PET, CTET, UPTET and Lekhpal.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>Tally and Accounting</h3>
+          <p>Learn accounting fundamentals, Tally and GST concepts.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+
+        <article class="card">
+          <h3>Typing and Data Entry</h3>
+          <p>Improve typing skills and learn office data entry.</p>
+          <a href="#contact">Enquire Now →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-title">
+        <h2>Why Choose Us?</h2>
+        <p>A learning platform designed to help you grow.</p>
+      </div>
+
+      <div class="grid">
+        <div class="feature">
+          <span>💻</span>
+          <h3>Digital Learning</h3>
+          <p>Learn computer and technology skills.</p>
+        </div>
+
+        <div class="feature">
+          <span>📚</span>
+          <h3>Multiple Courses</h3>
+          <p>Explore academic and career-focused subjects.</p>
+        </div>
+
+        <div class="feature">
+          <span>🎯</span>
+          <h3>Career Preparation</h3>
+          <p>Build skills for education and employment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact AI Digital Institute</h2>
+      <p>Have a question about our courses? Contact us.</p>
+      <p>
+        Phone:
+        <a href="tel:7565979491">7565979491</a>
+      </p>
+      <p>
+        Email:
+        <a href="mailto:ik606656@gmail.com">ik606656@gmail.com</a>
+      </p>
+      <p style="margin-top:22px;">
+        <a class="button" href="mailto:ik606656@gmail.com?subject=Course%20Enquiry">
+          Enquire About Courses
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> AI Digital Institute. All rights reserved.</p>
+    <p>Learn. Grow. Succeed.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
